@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <link rel="stylesheet" href="C:\Users\Team knowhow\Documents\6. CODING\Projects\Helloworld\CHALLENGE_PROJECT_CHEATSHEET\RESOURCES\STYLE.CSS">
+</head>
+<BODy>
+    <div class="banner">
+        <ul>
+            <li><a href="#top">top</a></li>
+            <li><a href="#introduction">introduction</a></li>
+            <li><a href="#padding">Padding</a></li>
+            <li><a href="#border">Border</a></li>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#bottom">bottom</a></li>
+        </ul>
+    </div>
+    <div class="header" id="top">
+        <h1>The Box Model</h1>
+    </div>
+    <div class="bulk">
+        <div id="introduction">
+            <h2>Introduction: The Box Model</h2>
+            <img src="C:\Users\Team knowhow\Documents\6. CODING\Projects\Helloworld\CHALLENGE_PROJECT_CHEATSHEET\RESOURCES\boxdim.png" alt="">
+            <p>'The Box Model' refers to the rectangular boxes that are generated around the content they contain. The Box model incudes: content, padding, border and margin. </p>
+        </div>
+        <br>
+        <div id="padding">
+            <h2>Padding</h2>
+            <p>Padding is the inner most section of the box model. By using 
+                the 'padding' property, it is possible to set the padding dimensions. There can be 1-4 values
+                with pixel values and percentage values (with percentage values refering to the width of the content block)
+            <h3>4 values</h3>
+            <p class="example">padding: 6px 11px 4px 9px;</p>
+            <p>changes the padding to 6px on the top, 11px on the right, 4px on the bottom and 9px on the left. </p>
+            <h3>3 values</h3>
+            <p class="example">padding: 5px 10px 20px;</p>    
+            <p>This Changes the padding to 10px on the left and right but 5px on top and 20px on the bottom.</p>
+            <h3>2 values</h3>
+            <p class="example">padding: 5px 30px;</p>
+            <p>changes the padding to 5px on the top and bottom and 30px on the left and right.</p>
+            <br>
+            <ul class="notes">
+                <li>To change the padding sides independantly we use the properties; padding-left, padding-right, padding-top, padding-bottom</li>
+                <li>values for padding values cannot be negative. 
+                percentage values for padding properties refer to the width of the generated box's containing block</li>
+            </ul>
+        </div>
+        <br>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>4 values</th>
+                <th>3 values</th>
+                <th>2 values</th>
+                <th>1 value</th>
+            </tr>
+            <tr>
+                <th scope="row">example</th>
+                <td>padding: 6px 11px 4px 9px;</td>
+                <td>padding: 5px 10px 20px;</td>
+                <td>padding: 5px 30px;</td>
+                <td>padding: 5px</td>
+            </tr>
+            <tr>
+                <th scope="row">top</th>
+                <td>6px</td>
+                <td>5px</td>
+                <td>5px</td>
+                <td>5px</td>
+            </tr>
+            <tr>
+                <th scope="row">Right</th>
+                <td>11px</td>
+                <td>10px</td>
+                <td>30px</td>
+                <td>5px</td>
+            </tr>
+            <tr>
+                <th scope="row">bottom</th>
+                <td>4px</td>
+                <td>20px</td>
+                <td>5px</td>
+                <td>5px</td>
+            </tr>
+            <tr>
+                <th scope="row">left</th>
+                <td>9px</td>
+                <td>10px</td>
+                <td>30px</td>
+                <td>5px</td>
+            </tr>
+        </table>
+        <br>
+        <div id="border">
+            <h2>Border</h2>
+            <p>The Border is outside of the padding and the border property controls width, color and style.</p>
+            <h3>Border shorthand rule</h3>
+            <p class="example">border: thick solid red;</p>
+            <p>This changes the border to a solid thick red line and will display like this in the browser</p>
+            <br>
+            <ul class="notes">
+                <li>Specific properties include: border-top, border-top-style, border-top-width, border-top-color. Change top for left, right or bottom
+                depending on the side you want to change</li>
+            </ul>
+        </div>
+        <br>
+        <div id="margin">
+            <h2>Margin</h2>
+            <p>Margin is outside of the border and the margin property controls the margins width</p>
+            <h3>Margin rule</h3>
+            <p class="example">margin: 2em;</p>
+            <p>This sets the margin width to 2em (200%) on all four sides.</p>
+            <br>
+            <ul class="notes">
+                <li>negative values are allowed</li>
+                <li>percentage values refer to the width of the content box</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="footer" id="bottom">
+        <ul>
+            <li><a href="C:\Users\Team knowhow\Documents\6. CODING\Projects\Helloworld\CHALLENGE_PROJECT_CHEATSHEET\References.html">References</a></li>
+            <li><a href="C:\Users\Team knowhow\Documents\6. CODING\Projects\Helloworld\CHALLENGE_PROJECT_CHEATSHEET\contact.html">Contact</a></li>
+        </ul>
+    </div>
+</BODy>
